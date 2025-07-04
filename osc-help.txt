@@ -1,0 +1,52 @@
+
+
+Usage:
+open-stage-control.exe [options]
+
+Options:
+  -s, --send             default targets for all widgets (ip: port / domain:
+                         port / midi: port_name pairs)                   [array]
+  -l, --load             session file to load (.json)                   [string]
+      --state            state file to load (.state)                    [string]
+  -c, --custom-module    custom module file to load (.js)
+                         WARNING: custom module can access the file system, use
+                         at your own risk.                              [string]
+  -p, --port             http port of the server (default to 8080)      [number]
+  -o, --osc-port         osc input port (default to --port)             [number]
+      --tcp-port         tcp server input port                          [number]
+      --tcp-targets      tcp servers to connect to (ip: port pairs), does not
+                         substitute for --send                           [array]
+  -m, --midi             midi router settings                            [array]
+  -d, --debug            log received osc messages in the console      [boolean]
+  -n, --no-gui           disable default gui                           [boolean]
+      --fullscreen       launch in fullscreen mode (only affects the default
+                         client gui)                                   [boolean]
+  -t, --theme            theme name or path (multiple values allowed)    [array]
+      --client-options   client options (opt=value pairs)                [array]
+      --disable-vsync    disable gui's vertical synchronization        [boolean]
+      --force-gpu        ignore chrome's gpu blacklist                 [boolean]
+      --read-only        disable session editing and session history changes
+                                                                       [boolean]
+      --remote-saving    disable remote session saving for hosts that don't
+                         match the regular expression                   [string]
+      --remote-root      set remote file browsing root folder           [string]
+      --authentication   restrict access to "user:password" (remote clients will
+                         be prompted for these credentials)             [string]
+      --instance-name    used to differentiate multiple instances in a zeroconf
+                         network                                        [string]
+      --use-ssl          set to true to use HTTPS protocol instead of HTTP (a
+                         self-signed certificate will be created)      [boolean]
+      --disable-gpu      disable hardware acceleration                 [boolean]
+      --inspect          enable node/electron inspector                [boolean]
+      --cache-dir        override default cache directory               [string]
+      --config-file      override default config file (defaults to
+                         cache-dir/config.json)                         [string]
+      --docs             serve documentation website locally and open it with
+                         the system's default browser                  [boolean]
+      --client-position  position of the client window ("x,y" pair of integers)
+                                                                        [string]
+      --client-size      size of the client window ("width,height" pair of
+                         integers)                                      [string]
+      --no-qrcode        disable qrcode when the server starts         [boolean]
+  -h, --help             Show help                                     [boolean]
+  -v, --version          Show version number                           [boolean]
