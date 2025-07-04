@@ -9,8 +9,10 @@ _A terse implementation plan for configuring Open Stage Control for local Window
 - Platform: Windows 11
 - Purpose: Local touchscreen surface for Ableton Live 12
 - MIDI Virtual Port: `OSC-server` (via LoopMIDI)
-- Config location: `C:\gdrive\Music\osc-server\my-osc.config`
-- Layout location: `C:\gdrive\Music\osc-server\layouts\`
+- Project root: `C:\gdrive\Music\osc-server`
+- Config location: `.\my-osc.config`
+- Layout location: `.\layouts\`
+- OSC install: `.\open-stage-control_win32-x64\`
 
 ---
 

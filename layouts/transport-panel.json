@@ -1,0 +1,21 @@
+{
+  "widgets": [
+    {
+      "type": "button",
+      "label": "Play",
+      "onValue": "/midi/note 1 60 127"
+    },
+    {
+      "type": "button",
+      "label": "Record",
+      "onValue": "/midi/note 1 61 127"
+    },
+    {
+      "type": "fader",
+      "label": "Master Vol",
+      "min": 0,
+      "max": 127,
+      "onValue": "/midi/cc 1 7 $value"
+    }
+  ]
+}
