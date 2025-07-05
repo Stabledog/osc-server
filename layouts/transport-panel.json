@@ -8,7 +8,33 @@
       {
         "type": "tab",
         "label": "main",
-        "widgets": [],
+        "widgets": [
+          {
+            "type": "button",
+            "id": "play_button",
+            "label": "Play",
+            "address": "/midi/note",
+            "preArgs": [1, 60, 127],
+            "target": "midi:OSC-server"
+          },
+          {
+            "type": "button", 
+            "id": "record_button",
+            "label": "Record",
+            "address": "/midi/note",
+            "preArgs": [1, 61, 127],
+            "target": "midi:OSC-server"
+          },
+          {
+            "type": "fader",
+            "id": "master_volume",
+            "label": "Master Vol",
+            "range": {"min": 0, "max": 127},
+            "address": "/midi/cc",
+            "preArgs": [1, 7],
+            "target": "midi:OSC-server"
+          }
+        ],
         "decimals": 2,
         "colorWidget": "auto",
         "lock": false,
